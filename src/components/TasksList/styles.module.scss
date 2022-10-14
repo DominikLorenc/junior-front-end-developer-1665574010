@@ -1,0 +1,32 @@
+@import '../../styles/variables';
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+
+  width: 320px;
+  height: 784px;
+
+  background-color: $white;
+
+  border-radius: 12px;
+  box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1);
+
+  &Title {
+    padding: 23px 24px;
+
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 19px;
+
+    color: $grey-scale-1;
+
+    border-bottom: 1px solid $grey;
+
+    text-transform: uppercase;
+  }
+
+  &Tasks {
+    padding: 35px 24px;
+  }
+}
