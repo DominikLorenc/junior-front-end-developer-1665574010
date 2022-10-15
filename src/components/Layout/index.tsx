@@ -6,7 +6,7 @@ import { tasksData } from '../../context/TasksData';
 import styles from './styles.module.scss';
 import { useState } from 'react';
 
-const { Wrapper } = styles;
+const { Wrapper, wrapperMain } = styles;
 
 export const Layout = ({ children }: LayoutProps) => {
   const [idTask, setIdTask] = useState(0);
@@ -18,7 +18,7 @@ export const Layout = ({ children }: LayoutProps) => {
   return (
     <div className={Wrapper}>
       <TasksContext.Provider value={{ tasksData, currentTask, idTask}}>
-        <main>{children}</main>
+        <main className={wrapperMain}>{children}</main>
       </TasksContext.Provider>
     </div>
   );

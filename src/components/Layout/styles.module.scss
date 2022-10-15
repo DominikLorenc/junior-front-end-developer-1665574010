@@ -2,8 +2,13 @@
 
 .Wrapper {
   height: 100vh;
-
   padding: 40px 32px;
 
   background-color: $grey;
+
+  main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
