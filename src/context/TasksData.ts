@@ -17,6 +17,7 @@ export const tasksData: ITask[] = [
         time: '12:20',
       },
       {
+        status: 'active',
         id: 1,
         author: 'Olga Nelson ',
         date: 'Dec 17',
@@ -26,6 +27,7 @@ export const tasksData: ITask[] = [
         time: '11:20',
       },
       {
+        status: 'read',
         id: 2,
         author: 'Olga Nelson ',
         date: 'Dec 17',
@@ -52,6 +54,7 @@ export const tasksData: ITask[] = [
         time: '12:20',
       },
       {
+        status: 'read',
         id: 1,
         author: 'Olga Nelson ',
         date: 'Dec 17',
@@ -78,6 +81,7 @@ export const tasksData: ITask[] = [
         time: '12:20',
       },
       {
+        status: 'active',
         id: 1,
         author: 'Olga Nelson ',
         date: 'Dec 17',
@@ -104,6 +108,7 @@ export const tasksData: ITask[] = [
         time: '12:20',
       },
       {
+        status: 'new',
         id: 1,
         author: 'Olga Nelson ',
         date: 'Dec 17',
@@ -120,8 +125,8 @@ export const tasksData: ITask[] = [
     status: 'locked',
     bussinessContext: [
       {
+        status: 'read',
         id: 0,
-        status: 'new',
         author: 'Olga Nelson',
         date: 'Dec 17',
         title: 'New sprint, tasks and intro information.',
@@ -130,6 +135,7 @@ export const tasksData: ITask[] = [
         time: '12:20',
       },
       {
+        status: 'read',
         id: 1,
         author: 'Olga Nelson ',
         date: 'Dec 17',
