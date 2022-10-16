@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/DominikLorenc.github.io/junior-front-end-developer-1665574010/static/css/main.8b06c50b.css",
+    "main.js": "/DominikLorenc.github.io/junior-front-end-developer-1665574010/static/js/main.bc321d7f.js",
+    "index.html": "/DominikLorenc.github.io/junior-front-end-developer-1665574010/index.html",
+    "main.8b06c50b.css.map": "/DominikLorenc.github.io/junior-front-end-developer-1665574010/static/css/main.8b06c50b.css.map",
+    "main.bc321d7f.js.map": "/DominikLorenc.github.io/junior-front-end-developer-1665574010/static/js/main.bc321d7f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8b06c50b.css",
+    "static/js/main.bc321d7f.js"
+  ]
+}
