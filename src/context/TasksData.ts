@@ -1,8 +1,8 @@
 import { ITask } from '../types/ITasks';
 
-export const tasksData: ITask[] = [
+export  const tasks: ITask[] = [
   {
-    id: 1,
+    id: 0,
     taskName: 'Application Setup',
     status: 'done',
     bussinessContext: [
@@ -17,6 +17,7 @@ export const tasksData: ITask[] = [
         time: '12:20',
       },
       {
+        status: 'active',
         id: 1,
         author: 'Olga Nelson ',
         date: 'Dec 17',
@@ -26,6 +27,7 @@ export const tasksData: ITask[] = [
         time: '11:20',
       },
       {
+        status: 'read',
         id: 2,
         author: 'Olga Nelson ',
         date: 'Dec 17',
@@ -37,7 +39,7 @@ export const tasksData: ITask[] = [
     ],
   },
   {
-    id: 2,
+    id: 1,
     taskName: 'Static Books List',
     status: 'done',
     bussinessContext: [
@@ -52,6 +54,7 @@ export const tasksData: ITask[] = [
         time: '12:20',
       },
       {
+        status: 'read',
         id: 1,
         author: 'Olga Nelson ',
         date: 'Dec 17',
@@ -63,7 +66,7 @@ export const tasksData: ITask[] = [
     ],
   },
   {
-    id: 3,
+    id: 2,
     taskName: 'Administration Panel',
     status: 'done',
     bussinessContext: [
@@ -78,6 +81,7 @@ export const tasksData: ITask[] = [
         time: '12:20',
       },
       {
+        status: 'active',
         id: 1,
         author: 'Olga Nelson ',
         date: 'Dec 17',
@@ -89,7 +93,7 @@ export const tasksData: ITask[] = [
     ],
   },
   {
-    id: 4,
+    id: 3,
     taskName: 'Connect Admin with Frontend',
     status: 'active',
     bussinessContext: [
@@ -104,6 +108,7 @@ export const tasksData: ITask[] = [
         time: '12:20',
       },
       {
+        status: 'new',
         id: 1,
         author: 'Olga Nelson ',
         date: 'Dec 17',
@@ -115,13 +120,13 @@ export const tasksData: ITask[] = [
     ],
   },
   {
-    id: 5,
+    id: 4,
     taskName: 'Book Review Feature',
     status: 'locked',
     bussinessContext: [
       {
+        status: 'read',
         id: 0,
-        status: 'new',
         author: 'Olga Nelson',
         date: 'Dec 17',
         title: 'New sprint, tasks and intro information.',
@@ -130,6 +135,7 @@ export const tasksData: ITask[] = [
         time: '12:20',
       },
       {
+        status: 'read',
         id: 1,
         author: 'Olga Nelson ',
         date: 'Dec 17',

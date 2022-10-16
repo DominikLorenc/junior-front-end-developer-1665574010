@@ -17,7 +17,6 @@ export const Tasks = () => {
   const { praparedTaskWithIcon } = useTasks(tasksData);
 
 
-
   return (
     <>
       {praparedTaskWithIcon.map(({ taskName, icon, status, id }) => (
@@ -36,7 +35,7 @@ export const Tasks = () => {
           <p
             className={cx(
               wrapperLabel,
-              status === 'active' ? wrapperLabelActive : '',
+              id === idTask  ? wrapperLabelActive : '',
             )}>
             {taskName}
           </p>
