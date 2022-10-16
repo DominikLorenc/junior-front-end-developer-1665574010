@@ -1,6 +1,6 @@
 import { cx } from '../../../utils';
 import styles from './styles.module.scss';
-import { useContext, useState, useRef } from 'react';
+import { useContext } from 'react';
 import { TasksContext } from '../../../context/TasksContext';
 import { useContextCard } from './hooks';
 
@@ -19,40 +19,23 @@ const {
 } = styles;
 
 export const ContextCard = () => {
-  const { tasksData, idTask, updateContextBusinessStatus } =
+  const { tasksData, idTask, updateContextBusinessStatus, setCurrentCard } =
     useContext(TasksContext);
-  const { findedTasks, activeTask } = useContextCard(tasksData, idTask);
-  const [active, setActive] = useState('');
-
-  let tasks = findedTasks.length === 0 ? activeTask : findedTasks;
-
-  const handleClick = (e: any, i: number) => {
-    const newArrWithNewStatus = tasks.map((task, index) => {
-      
-      task.bussinessContext.map((element, index) => {
-        if(element.status === 'active') {
-          element.status = 'read'
-        }
-        if(element.id === i){
-          element.status = 'active'
-        }
-      })
-     
-      return task;
-    });
-
-
-  };
+  const { tasks, handleClick } = useContextCard(
+    tasksData,
+    idTask,
+    setCurrentCard,
+  );
 
   return (
-    <div className="outerWrapper">
+    <>
       {tasks[0].bussinessContext.map(
         ({ status, author, description, date, title, id }) => {
           return (
             <div
-              onClick={(e) => {
+              onClick={() => {
                 updateContextBusinessStatus(id);
-                handleClick(e, id);
+                handleClick(id);
               }}
               key={id}
               className={cx(
@@ -80,6 +63,6 @@ export const ContextCard = () => {
           );
         },
       )}
-    </div>
+    </>
   );
 };

@@ -13,7 +13,7 @@ interface IBusinessContext {
   title: string;
   description: string;
   time: string;
-  avatar?: Image;
+  avatar: Image;
 }
 
 export interface ITask {
