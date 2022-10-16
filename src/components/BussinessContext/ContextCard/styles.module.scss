@@ -6,9 +6,8 @@
   margin: 12px 8px 0px 8px;
   padding: 11px 20px 19px;
 
-  background-color: $white;
+  // background-color: $white;
 
-  box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
 
   font-size: 10px;
@@ -17,6 +16,15 @@
   color: $grey-scale-3;
 
   cursor: pointer;
+
+  &New {
+    background-color: $white;
+  }
+
+  &Active {
+    background-color: $white;
+    box-shadow: 0px 8px 16px rgba(84, 84, 84, 0.2);
+  }
 
   &Info {
     display: flex;
@@ -52,13 +60,12 @@
     font-weight: 700;
     color: $grey-scale-1;
 
-    &New{
+    &New {
       color: $blue;
     }
   }
 
   &Description {
-
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
@@ -67,6 +74,6 @@
   }
 
   &:hover {
-    scale: 1.01
+    scale: 1.01;
   }
 }

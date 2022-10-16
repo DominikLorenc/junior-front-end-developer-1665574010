@@ -7,7 +7,7 @@ interface Image {
 
 interface IBusinessContext {
   id: number;
-  status?: string;
+  status: string;
   author: string;
   date: string;
   title: string;
@@ -20,5 +20,5 @@ export interface ITask {
   id: number;
   taskName: string;
   status: AvailableStaus;
-  bussinessContext?: IBusinessContext[];
+  bussinessContext: IBusinessContext[];
 }
