@@ -20,10 +20,11 @@
     border-radius: 50%;
   }
 
-  &Date, &Time {
+  &Date,
+  &Time {
     font-weight: 500;
-font-size: 10px;
-line-height: 14px;
-color: $grey-scale-3;
+    font-size: 10px;
+    line-height: 14px;
+    color: $grey-scale-3;
   }
 }

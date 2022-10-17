@@ -9,7 +9,7 @@ export const BussinessBar = () => {
         <div className={wrapperTabIcon}>
           <BusinessSVG />
         </div>
-        <h1 className={wrapperTabTitle}>Bussiness Context </h1>
+        <h1 className={wrapperTabTitle}>Bussiness Context</h1>
       </div>
     </div>
   );

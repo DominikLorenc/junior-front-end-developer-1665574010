@@ -19,6 +19,15 @@
         margin: 0 26px 0 14px;
     }
 
+    &Avatar {
+      width: 400px;
+ 
+      img{
+        width: 50px;
+        border-radius: 50%;
+      }
+    }
+
     &ContextText {
       font-weight: 500;
       font-size: 12px;
